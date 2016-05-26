@@ -1,0 +1,30 @@
+<div class="mailing-tile">
+  <div class="mailing">
+    <div class="caption">
+      <i class="glyphicon glyphicon-envelope"></i>
+      <span class="caption-subject">Contact Us</span>
+    </div>
+  </div>
+  <div class="portlet-body">
+    <form  (ngSubmit)="submit()">
+      <div class="form-group">
+        <label for="contact-name" class="hidden">Name</label>
+        <input type="name" class="form-control" id="contact-name" placeholder="Name" [(ngModel)]="name">
+      </div>
+      <div class="form-group">
+        <label for="contact-email" class="hidden">Email address</label>
+        <input type="email" class="form-control" id="contact-email" placeholder="Email" [(ngModel)]="email">
+      </div>
+      <div class="form-group">
+        <label for="contact-location" class="hidden">Location</label>
+        <input type="location" class="form-control" id="contact-location" placeholder="Location" [(ngModel)]="location">
+      </div>
+      <div class="form-group">
+        <label for="message" class="hidden">Message</label>
+        ​<textarea type="question" class="form-control" style="margin-top: -20px;" rows="5" id="message" placeholder="Message" [(ngModel)]="message"></textarea>
+      </div>
+      <button type="submit" class="btn btn-default btn-block btn-success">Send Message</button>
+    </form>
+    <div *ngIf="failed">Something went wrong. If you continue to see this error, please contact us at info@expium.com</div>
+  </div>
+</div>
