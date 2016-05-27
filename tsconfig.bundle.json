@@ -1,0 +1,18 @@
+{
+  "compilerOptions": {
+    "target": "es5",
+    "module": "system",
+    "out": "bundle/web-forms-for-jira-2.js",
+    "noImplicitAny": true,
+    "preserveConstEnums": true,
+    "sourceMap": true,
+    "experimentalDecorators": true,
+    "emitDecoratorMetadata": true,
+    "moduleResolution": "node",
+    "declaration": true
+  },
+  "files": [
+    "src/jira.ts",
+    "typings/index.d.ts"
+  ]
+}

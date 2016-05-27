@@ -1,0 +1,9 @@
+node_modules/
+typings/
+*.log
+*.tgz
+src/
+local-*
+.vscode
+*.json
+.npmignore
